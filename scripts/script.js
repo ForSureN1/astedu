@@ -8,11 +8,18 @@ $('#slider1').slick({
     prevArrow: '<button type="button" class="slick_prev head_arrow"></button>',
     nextArrow: '<button type="button" class="slick_next head_arrow"></button>',
     responsive: [{
-        breakpoint: 720,
-        settings: {
-            vertical: false,
+            breakpoint: 720,
+            settings: {
+                vertical: false,
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                dots: false,
+            }
         }
-    }]
+    ]
 });
 
 window.addEventListener('load', () => {
