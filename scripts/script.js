@@ -19,7 +19,6 @@ $('#slider1').slick({
             breakpoint: 550,
             settings: {
                 dots: false,
-                arrows: false,
                 vertical: false,
             }
         }
@@ -39,6 +38,14 @@ $(function() {
     $("input[type='tel']").mask("+7(999) 999-9999");
 });
 
+//fancybox gallery 
+$(document).ready(function() {
+    var $slidebox = $('a.fancybox');
+    $('.zoom').click(function() {
+        $.fancybox.open(($slidebox));
+    });
+});
+
 window.addEventListener('load', () => {
 
     //Portfolio swiper
@@ -46,21 +53,33 @@ window.addEventListener('load', () => {
     let phone = document.querySelector('.portfolio__phone')
     let img_monitor = document.querySelector('.js-monitor')
     let img_phone = document.querySelector('.js-phone')
+    let desktop_img = document.querySelector('.js-fancy-desktop')
+    let phone_img = document.querySelector('.js-fancy-phone')
     monitor.addEventListener('click', swapPhone)
     phone.addEventListener('click', swapMonitor)
 
     function swapMonitor() {
+        let url_one = desktop_img.getAttribute('href')
+        let url_two = phone_img.getAttribute('href')
         monitor.classList.remove('rotate')
         phone.classList.remove('rotate')
         img_monitor.classList.remove('remove')
         img_phone.classList.add('remove')
+        console.log(url_one)
+        console.log(url_two)
+        desktop_img.setAttribute("href", url_two)
+        phone_img.setAttribute("href", url_one)
     }
 
     function swapPhone() {
+        let url_one = desktop_img.getAttribute('href')
+        let url_two = phone_img.getAttribute('href')
         monitor.classList.add('rotate')
         phone.classList.add('rotate')
         img_monitor.classList.add('remove')
         img_phone.classList.remove('remove')
+        phone_img.setAttribute("href", url_one)
+        desktop_img.setAttribute("href", url_two)
     }
 
     //Forms checkbox
