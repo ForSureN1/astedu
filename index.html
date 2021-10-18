@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASTEducation</title>
     <!-- <link rel="stylesheet" href="style/slick-theme.css"> -->
+    <link rel="stylesheet" href="style/jquery.fancybox.css">
     <link rel="stylesheet" href="style/slick.css">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/style.css">
@@ -135,8 +136,8 @@
                 <div class="container">
                     <div class="container__about content">
                         <div class="about__items">
+                            <h2 class="about__title title">О нас</h2>
                             <div class="about__left">
-                                <h2 class="about__title title">О нас</h2>
                                 <p class="about__text">“Astana Creative” Веб-студия полного цикла, на протяжении 9 лет, мы разрабатываем и продвигаем проекты различного уровня сложности, от сайта-визиток до сложных, высоко-технологичных веб-ресурсов. Основными направлениями
                                     компании является создание сайтов, веб-дизайн, SEO оптимизация, контекстная реклама и SMM. Наш опыт, умения и знания, позволяют нам создавать красивые, удобные и эффективные веб-сайты. Основными направлениями компании
                                     является создание сайтов, веб-дизайн, SEO оптимизация,“Astana Creative” Веб-студия полного цикла, на протяжении 9 лет, мы разрабатываем</p>
@@ -428,13 +429,17 @@
                                         <div class="portfolio__monitor">
                                             <div class="portfolio__monitor-img">
                                                 <img class="monitor" src="images/monitor.png" alt="Портфолио Desktop">
-                                                <div class="portfolio__site js-monitor"><img src="images/site.jpg" alt=""></div>
+                                                <div class="portfolio__site js-monitor">
+                                                    <a href="javascript:;" data-fancybox="portfolio" data-src="images/site.jpg"><img src="images/site.jpg" alt=""></a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="portfolio__phone">
                                             <div class="portfolio__phone-img">
                                                 <img alt="Портфолио Phone" class="phone" src="images/phone.png">
-                                                <div class="portfolio__site phone js-phone remove"><img src="images/mobile.jpg" alt=""></div>
+                                                <div class="portfolio__site phone js-phone remove">
+                                                    <a href="javascript:;" data-fancybox="portfolio" data-src="images/mobile.jpg"><img src="images/mobile.jpg" alt=""></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -457,6 +462,7 @@
                             <div class="form__item">
                                 <form action="" class="form">
                                     <div class="form__elements">
+                                        <h2 class="form__header">Оставить заявку</h2>
                                         <span>Ваше имя</span>
                                         <input type="text" class="form__input" required>
                                         <span>Телефон</span>
@@ -585,6 +591,7 @@
     <script src="scripts/jquery.3.6.0.min.js"></script>
     <script src="scripts/slick.min.js"></script>
     <script src="scripts/jquery.maskedinput.min.js"></script>
+    <script src="scripts/jquery.fancybox.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
