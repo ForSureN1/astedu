@@ -26,12 +26,12 @@
                         <div class="header__menu">
                             <nav class="nav__menu">
                                 <ul class="menu burger">
-                                    <li class="menu__item"><a href="" class="menu__link">о нас</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">база знаний</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Программа курса</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">преподаватель</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">портфолио</a></li>
-                                    <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                                    <li class="menu__item"><a href="#about" class="menu__link h_orange">о нас</a></li>
+                                    <li class="menu__item"><a href="#baza" class="menu__link h_orange">база знаний</a></li>
+                                    <li class="menu__item"><a href="#kurs" class="menu__link h_orange">Программа курса</a></li>
+                                    <li class="menu__item"><a href="#prepod" class="menu__link h_orange">преподаватель</a></li>
+                                    <li class="menu__item"><a href="#port" class="menu__link h_orange">портфолио</a></li>
+                                    <li class="menu__item"><a href="#contacts" class="menu__link h_orange">Контакты</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -73,7 +73,7 @@
             </div>
         </div>
     </header>
-    <section class="main-course">
+    <section class="main-course" id="main">
         <div class="main-course__wrapper">
             <div class="container">
                 <div class="main-course__container">
@@ -81,7 +81,7 @@
                         <h1 class="main-course__text">Курc верстальщик</h1>
                         <h1 class="main-course__title">html, css & js</h1>
                         <div class="main-course__btn">
-                            <a href="" class="main-course__btn-link">оставить заявку</a>
+                            <a href="javascript:;" class="main-course__btn-link js-popup">оставить заявку</a>
                         </div>
                     </div>
                     <div class="main-course__right">
@@ -130,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper-dark">
                 <div class="container">
                     <div class="container__about content">
@@ -149,7 +149,7 @@
                 </div>
             </div>
         </section>
-        <section class="knowledge">
+        <section class="knowledge" id="baza">
             <div class="wrapper-white">
                 <div class="container">
                     <div class="knowledge__container content">
@@ -182,7 +182,7 @@
                                     </a>
                                 </div>
                                 <div class="knowledge__btn">
-                                    <a href="#" class="knowledge__btn btn">Оставить заявку</a>
+                                    <a href="javascript:;" class="knowledge__btn btn js-popup">Оставить заявку</a>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +190,7 @@
                 </div>
             </div>
         </section>
-        <section class="programs">
+        <section class="programs" id="kurs">
             <div class="wrapper-dark">
                 <div class="container">
                     <div class="programs__container content">
@@ -207,7 +207,7 @@
                                     <path d="M18.7278 8.94465C18.5255 8.74241 18.1986 8.74241 17.9964 8.94465C17.7942 9.14689 17.7942 9.47379 17.9964 9.67603L20.7342 12.4138L17.9964 15.1515C17.7942 15.3538 17.7942 15.6807 17.9964 15.8829C18.0973 15.9838 18.2297 16.0345 18.3621 16.0345C18.4945 16.0345 18.6269 15.9838 18.7278 15.8829L21.8312 12.7795C22.0335 12.5772 22.0335 12.2503 21.8312 12.0481L18.7278 8.94465Z" fill="#FF6D00"/>
                                 </svg>
                                 <div class="programs__title">Основы HTML</div>
-                                <div class="programs__text">Структура веб-страницы. Семантическая верстка</div>
+                                <div class="programs__text h_orange">Структура веб-страницы. Семантическая верстка</div>
                             </div>
                             <div class="programs__item">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,22 +218,15 @@
                                     <path d="M10.6038 10.3448V8.27585C10.6038 7.99085 10.8355 7.7586 11.121 7.7586C11.4071 7.7586 11.6383 7.52688 11.6383 7.24136C11.6383 6.95585 11.4071 6.72412 11.121 6.72412C10.2655 6.72412 9.5693 7.42033 9.5693 8.27585V10.3448C9.5693 10.9153 9.10534 11.3793 8.53482 11.3793C8.24879 11.3793 8.01758 11.611 8.01758 11.8965C8.01758 12.1821 8.24879 12.4138 8.53482 12.4138C9.10534 12.4138 9.5693 12.8777 9.5693 13.4483V15.5172C9.5693 16.3727 10.2655 17.0689 11.121 17.0689C11.4071 17.0689 11.6383 16.8372 11.6383 16.5517C11.6383 16.2662 11.4071 16.0345 11.121 16.0345C10.8355 16.0345 10.6038 15.8022 10.6038 15.5172V13.4483C10.6038 12.8276 10.3234 12.2762 9.88896 11.8965C10.3234 11.5169 10.6038 10.9655 10.6038 10.3448Z" fill="#FF6D00"/>
                                 </svg>
                                 <div class="programs__title">Основы CSS</div>
-                                <div class="programs__text">Селекторы. Псевдоклассы. Приоритеты свойств</div>
+                                <div class="programs__text h_orange">Селекторы. Псевдоклассы. Приоритеты свойств</div>
                             </div>
                             <div class="programs__item">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0)">
-                                    <path d="M24.7412 14.8224C24.7412 15.6522 25.4163 16.3273 26.2461 16.3273C26.5014 16.3273 26.7419 16.2632 26.9527 16.1506L27.3558 16.5537C27.4416 16.6395 27.5541 16.6824 27.6666 16.6824C27.779 16.6824 27.8915 16.6395 27.9773 16.5537C28.1489 16.3821 28.1489 16.1038 27.9773 15.9322L27.5742 15.5291C27.6868 15.3183 27.7509 15.0778 27.7509 14.8225C27.7509 13.9927 27.0758 13.3176 26.246 13.3176C25.4162 13.3176 24.7412 13.9927 24.7412 14.8224ZM26.872 14.8224C26.872 14.9863 26.8083 15.1351 26.7049 15.2468C26.6988 15.2522 26.6926 15.2574 26.6868 15.2632C26.681 15.269 26.6759 15.2752 26.6705 15.2813C26.5588 15.3846 26.4099 15.4484 26.2461 15.4484C25.9009 15.4484 25.6201 15.1677 25.6201 14.8225C25.6201 14.4773 25.9009 14.1965 26.2461 14.1965C26.5913 14.1965 26.872 14.4773 26.872 14.8224Z" fill="#FF6D00"/>
-                                    <path d="M29.5605 11.4234H28.3576C28.1149 11.4234 27.9182 11.6201 27.9182 11.8628C27.9182 12.1055 28.1149 12.3023 28.3576 12.3023H29.1211V17.6976H25.7964C25.7951 17.6976 25.7937 17.6976 25.7924 17.6976H23.7258V12.3023H25.8007C25.8012 12.3023 25.8016 12.3024 25.8021 12.3024C25.8026 12.3024 25.8032 12.3023 25.8038 12.3023H26.3068C26.5495 12.3023 26.7463 12.1055 26.7463 11.8628C26.7463 11.6201 26.5495 11.4234 26.3068 11.4234H26.1268C25.4043 9.17875 23.9852 7.16342 22.1036 5.72084C20.0701 4.1619 17.6381 3.3301 15.0703 3.31522C15.0204 3.31405 15.0705 3.31522 14.9297 3.31522C12.8351 3.32776 10.7838 3.90069 8.99725 4.97207C8.78912 5.09688 8.72156 5.36682 8.84637 5.575C8.97117 5.78313 9.24105 5.85075 9.4493 5.72588C10.2706 5.23334 11.1526 4.855 12.07 4.59742C11.1884 5.42565 10.4256 6.62559 9.84375 8.10889H6.67682C7.03734 7.67442 7.43191 7.26555 7.86064 6.88826C8.04287 6.72789 8.06057 6.45022 7.90025 6.26805C7.73994 6.08588 7.46221 6.06807 7.28004 6.22844C5.68898 7.6286 4.51611 9.41928 3.87287 11.4234H0.439453C0.196758 11.4234 0 11.6201 0 11.8628V18.137C0 18.3797 0.196758 18.5765 0.439453 18.5765H3.87316C4.59574 20.8211 6.01477 22.8364 7.89645 24.279C9.92988 25.838 12.3619 26.6698 14.9297 26.6846C14.9525 26.6848 14.9639 26.6859 15.0703 26.6846C17.6381 26.6698 20.0702 25.838 22.1036 24.279C23.9853 22.8364 25.4043 20.8211 26.1269 18.5765H29.5605C29.8032 18.5765 30 18.3797 30 18.137V11.8628C30 11.6201 29.8032 11.4234 29.5605 11.4234ZM23.2863 11.4234H21.059C20.9104 10.5575 20.7116 9.74248 20.4691 8.98774H23.9747C24.4795 9.73534 24.8938 10.5518 25.1998 11.4234H23.2863ZM9.8335 11.4234C9.9907 10.5523 10.2026 9.73569 10.4603 8.98774H14.5605V11.4234H9.8335ZM15.4395 8.9878H19.5397C19.7974 9.73575 20.0093 10.5524 20.1665 11.4234H15.4395V8.9878ZM15.4395 4.22975C16.9144 4.47051 18.2697 5.91356 19.2028 8.10889H15.4395V4.22975ZM23.3137 8.10889H20.1564C19.5769 6.63139 18.818 5.43526 17.9413 4.60733C20.0455 5.20961 21.9219 6.44149 23.3137 8.10889ZM14.5605 4.23022V8.10889H10.7974C11.73 5.91514 13.0847 4.47256 14.5605 4.23022ZM6.01963 8.9878H9.53098C9.2884 9.74248 9.08965 10.5576 8.941 11.4234H4.80117C5.10352 10.5603 5.51303 9.74284 6.01963 8.9878ZM5.26523 17.6976H0.878906V12.3023H22.8469V17.6976H7.31602C7.07332 17.6976 6.87656 17.8944 6.87656 18.1371C6.87656 18.3798 7.07332 18.5765 7.31602 18.5765H8.941C9.08959 19.4424 9.2884 20.2574 9.53092 21.0122H6.02525C5.52053 20.2646 5.10621 19.4481 4.80018 18.5765H5.26518C5.50787 18.5765 5.70463 18.3798 5.70463 18.1371C5.70463 17.8944 5.50793 17.6976 5.26523 17.6976ZM14.5605 21.891V25.7702C13.0856 25.5294 11.7303 24.0864 10.7972 21.891H14.5605ZM10.4603 21.0121C10.2026 20.2642 9.9907 19.4475 9.8335 18.5765H14.5605V21.0121H10.4603ZM15.4395 25.7697V21.891H19.2026C18.27 24.0848 16.9153 25.5273 15.4395 25.7697ZM15.4395 21.0121V18.5765H20.1665C20.0093 19.4476 19.7974 20.2642 19.5397 21.0122H15.4395V21.0121ZM6.68631 21.891H9.84363C10.4231 23.3685 11.182 24.5647 12.0587 25.3926C9.95449 24.7903 8.07809 23.5584 6.68631 21.891ZM17.9399 25.393C18.8173 24.5651 19.5766 23.3688 20.1562 21.891H23.3137C21.9216 23.5588 20.0447 24.7908 17.9399 25.393ZM23.9747 21.0121H20.469C20.7116 20.2574 20.9104 19.4423 21.059 18.5765H23.2863H25.1998C24.8937 19.4481 24.4794 20.2645 23.9747 21.0121Z" fill="#FF6D00"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0">
-                                    <rect width="30" height="30" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
+                                <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.7412 11.8224C24.7412 12.6522 25.4163 13.3273 26.2461 13.3273C26.5014 13.3273 26.7419 13.2632 26.9527 13.1506L27.3558 13.5537C27.4416 13.6395 27.5541 13.6824 27.6666 13.6824C27.779 13.6824 27.8915 13.6395 27.9773 13.5537C28.1489 13.3821 28.1489 13.1038 27.9773 12.9322L27.5742 12.5291C27.6868 12.3183 27.7509 12.0778 27.7509 11.8225C27.7509 10.9927 27.0758 10.3176 26.246 10.3176C25.4162 10.3176 24.7412 10.9927 24.7412 11.8224ZM26.872 11.8224C26.872 11.9863 26.8083 12.1351 26.7049 12.2468C26.6988 12.2522 26.6926 12.2574 26.6868 12.2632C26.681 12.269 26.6759 12.2752 26.6705 12.2813C26.5588 12.3846 26.4099 12.4484 26.2461 12.4484C25.9009 12.4484 25.6201 12.1677 25.6201 11.8225C25.6201 11.4773 25.9009 11.1965 26.2461 11.1965C26.5913 11.1965 26.872 11.4773 26.872 11.8224Z" fill="#FF6D00"/>
+                                    <path d="M29.5605 8.42336H28.3576C28.1149 8.42336 27.9182 8.62012 27.9182 8.86282C27.9182 9.10551 28.1149 9.30227 28.3576 9.30227H29.1211V14.6976H25.7964C25.7951 14.6976 25.7937 14.6976 25.7924 14.6976H23.7258V9.30227H25.8007C25.8012 9.30227 25.8016 9.30239 25.8021 9.30239C25.8026 9.30239 25.8032 9.30227 25.8038 9.30227H26.3068C26.5495 9.30227 26.7463 9.10551 26.7463 8.86282C26.7463 8.62012 26.5495 8.42336 26.3068 8.42336H26.1268C25.4043 6.17875 23.9852 4.16342 22.1036 2.72084C20.0701 1.1619 17.6381 0.330101 15.0703 0.315218C15.0204 0.314046 15.0705 0.315218 14.9297 0.315218C12.8351 0.327757 10.7838 0.900687 8.99725 1.97207C8.78912 2.09688 8.72156 2.36682 8.84637 2.575C8.97117 2.78313 9.24105 2.85075 9.4493 2.72588C10.2706 2.23334 11.1526 1.855 12.07 1.59742C11.1884 2.42565 10.4256 3.62559 9.84375 5.10889H6.67682C7.03734 4.67442 7.43191 4.26555 7.86064 3.88826C8.04287 3.72789 8.06057 3.45022 7.90025 3.26805C7.73994 3.08588 7.46221 3.06807 7.28004 3.22844C5.68898 4.6286 4.51611 6.41928 3.87287 8.42336H0.439453C0.196758 8.42336 0 8.62012 0 8.86282V15.137C0 15.3797 0.196758 15.5765 0.439453 15.5765H3.87316C4.59574 17.8211 6.01477 19.8364 7.89645 21.279C9.92988 22.838 12.3619 23.6698 14.9297 23.6846C14.9525 23.6848 14.9639 23.6859 15.0703 23.6846C17.6381 23.6698 20.0702 22.838 22.1036 21.279C23.9853 19.8364 25.4043 17.8211 26.1269 15.5765H29.5605C29.8032 15.5765 30 15.3797 30 15.137V8.86282C30 8.62012 29.8032 8.42336 29.5605 8.42336ZM23.2863 8.42336H21.059C20.9104 7.55752 20.7116 6.74248 20.4691 5.98774H23.9747C24.4795 6.73534 24.8938 7.55184 25.1998 8.42336H23.2863ZM9.8335 8.42336C9.9907 7.55231 10.2026 6.73569 10.4603 5.98774H14.5605V8.42336H9.8335ZM15.4395 5.9878H19.5397C19.7974 6.73575 20.0093 7.55237 20.1665 8.42342H15.4395V5.9878ZM15.4395 1.22975C16.9144 1.47051 18.2697 2.91356 19.2028 5.10889H15.4395V1.22975ZM23.3137 5.10889H20.1564C19.5769 3.63139 18.818 2.43526 17.9413 1.60733C20.0455 2.20961 21.9219 3.44149 23.3137 5.10889ZM14.5605 1.23022V5.10889H10.7974C11.73 2.91514 13.0847 1.47256 14.5605 1.23022ZM6.01963 5.9878H9.53098C9.2884 6.74248 9.08965 7.55758 8.941 8.42342H4.80117C5.10352 7.56034 5.51303 6.74284 6.01963 5.9878ZM5.26523 14.6976H0.878906V9.30233H22.8469V14.6976H7.31602C7.07332 14.6976 6.87656 14.8944 6.87656 15.1371C6.87656 15.3798 7.07332 15.5765 7.31602 15.5765H8.941C9.08959 16.4424 9.2884 17.2574 9.53092 18.0122H6.02525C5.52053 17.2646 5.10621 16.4481 4.80018 15.5765H5.26518C5.50787 15.5765 5.70463 15.3798 5.70463 15.1371C5.70463 14.8944 5.50793 14.6976 5.26523 14.6976ZM14.5605 18.891V22.7702C13.0856 22.5294 11.7303 21.0864 10.7972 18.891H14.5605ZM10.4603 18.0121C10.2026 17.2642 9.9907 16.4475 9.8335 15.5765H14.5605V18.0121H10.4603ZM15.4395 22.7697V18.891H19.2026C18.27 21.0848 16.9153 22.5273 15.4395 22.7697ZM15.4395 18.0121V15.5765H20.1665C20.0093 16.4476 19.7974 17.2642 19.5397 18.0122H15.4395V18.0121ZM6.68631 18.891H9.84363C10.4231 20.3685 11.182 21.5647 12.0587 22.3926C9.95449 21.7903 8.07809 20.5584 6.68631 18.891ZM17.9399 22.393C18.8173 21.5651 19.5766 20.3688 20.1562 18.891H23.3137C21.9216 20.5588 20.0447 21.7908 17.9399 22.393ZM23.9747 18.0121H20.469C20.7116 17.2574 20.9104 16.4423 21.059 15.5765H23.2863H25.1998C24.8937 16.4481 24.4794 17.2645 23.9747 18.0121Z" fill="#FF6D00"/>
+                                    </svg>
                                 <div class="programs__title">Кроссбраузерность</div>
-                                <div class="programs__text">Методология-БЭМ. Шрифты</div>
+                                <div class="programs__text h_orange">Методология-БЭМ. Шрифты</div>
                             </div>
                             <div class="programs__item">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -241,14 +234,14 @@
                                     <path d="M9.29943 12.0207C11.4081 12.0207 13.1184 10.3043 13.1184 8.20177C13.1184 6.0992 11.402 4.38281 9.29943 4.38281C7.19686 4.38281 5.48047 6.0992 5.48047 8.20177C5.48047 10.3043 7.19073 12.0207 9.29943 12.0207ZM9.29943 5.88465C10.5806 5.88465 11.6166 6.92674 11.6166 8.20177C11.6166 9.47681 10.5745 10.5189 9.29943 10.5189C8.0244 10.5189 6.98231 9.47681 6.98231 8.20177C6.98231 6.92674 8.01827 5.88465 9.29943 5.88465Z" fill="#FF6D00"/>
                                 </svg>
                                 <div class="programs__title">Изображения</div>
-                                <div class="programs__text">Работа с изображениями</div>
+                                <div class="programs__text h_orange">Работа с изображениями</div>
                             </div>
                             <div class="programs__item">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M28.6956 0H1.30436C0.585 0 0 0.585 0 1.30436V28.6956C0 29.415 0.585 30 1.30371 30H28.6956C29.415 30 30 29.415 30 28.6956V1.30436C30 0.585 29.415 0 28.6956 0ZM10.4348 20.8696V14.3479H19.5652V20.8696H10.4348ZM19.5652 22.1739V28.6956H10.4348V22.1739H19.5652ZM19.5652 6.52172V13.0434H10.4348V6.52172H19.5652ZM28.6956 6.52172V13.0434H20.8696V6.52172H28.6956ZM9.13043 13.0435H1.30436V6.52172H9.13043V13.0435ZM1.30436 14.3479H9.13043V20.8696H1.30436V14.3479ZM20.8696 14.3479H28.6956V20.8696H20.8696V14.3479ZM28.6956 1.30436V5.21742H1.30436V1.30436H28.6956ZM1.30436 22.1739H9.13043V28.6956H1.30436V22.1739ZM20.8696 28.6956V22.1739H28.6956V28.6956H20.8696Z" fill="#FF6D00"/>
                                 </svg>
                                 <div class="programs__title">Формы и таблицы</div>
-                                <div class="programs__text">Работа с формами и таблицами</div>
+                                <div class="programs__text h_orange">Работа с формами и таблицами</div>
                             </div>
                             <div class="programs__item">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -266,7 +259,7 @@
                                     </defs>
                                 </svg>
                                 <div class="programs__title">Позиционирование</div>
-                                <div class="programs__text">Управление местом расположения элемента</div>
+                                <div class="programs__text h_orange">Управление местом расположения элемента</div>
                             </div>
                             <div class="programs__item">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -284,7 +277,7 @@
                                     </defs>
                                 </svg>
                                 <div class="programs__title">Flex-box</div>
-                                <div class="programs__text">Flex-box концепция однонаправленного макета</div>
+                                <div class="programs__text h_orange">Flex-box концепция однонаправленного макета</div>
                             </div>
                             <div class="programs__item">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -296,7 +289,7 @@
                                     <path d="M14.7419 12.9312C14.4558 12.9312 14.2246 13.1629 14.2246 13.4484V15.0001C14.2246 15.2856 14.4558 15.5174 14.7419 15.5174C15.0279 15.5174 15.2591 15.2856 15.2591 15.0001V13.4484C15.2591 13.1629 15.0279 12.9312 14.7419 12.9312Z" fill="#FF6D00"/>
                                 </svg>
                                 <div class="programs__title">Основы JavaScript</div>
-                                <div class="programs__text">Функции. Работа с массивами и объектами</div>
+                                <div class="programs__text h_orange">Функции. Работа с массивами и объектами</div>
                             </div>
                             <div class="programs__item">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -315,14 +308,14 @@
                                     <path d="M9.84375 20.625H12.6562V13.125H9.84375V20.625ZM10.7812 14.0625H11.7188V19.6875H10.7812V14.0625Z" fill="#FF6D00"/>
                                 </svg>
                                 <div class="programs__title">Типы данных</div>
-                                <div class="programs__text">Переменные. Условия. Циклы</div>
+                                <div class="programs__text h_orange">Переменные. Условия. Циклы</div>
                             </div>
                             <div class="programs__item">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.5 20.5V14.5H15.5V9.5H19V1.5H11V9.5H14.5V14.5H3.5V20.5H0V28.5H8V20.5H4.5V15.5H14.5V20.5H11V28.5H19V20.5H15.5V15.5H25.5V20.5H22V28.5H30V20.5H26.5ZM12 2.5H18V8.5H12V2.5ZM7 27.5H1V21.5H7V27.5ZM18 27.5H12V21.5H18V27.5ZM29 27.5H23V21.5H29V27.5Z" fill="#FF6D00"/>
                                 </svg>
                                 <div class="programs__title">DOM</div>
-                                <div class="programs__text">События. Взаимодействие со страницей</div>
+                                <div class="programs__text h_orange">События. Взаимодействие со страницей</div>
                             </div>
                             <div class="programs__item">
                                 <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -331,7 +324,7 @@
                                     <path d="M18.8296 0C16.3015 5.25638 23.0958 13.4695 29.7321 7.55605C25.1499 15.4406 12.8254 8.2131 18.8296 0Z" fill="#FF6D00"/>
                                 </svg>
                                 <div class="programs__title">JQuery</div>
-                                <div class="programs__text">Библиотека JQuery. Работа с плагинами</div>
+                                <div class="programs__text h_orange">Библиотека JQuery. Работа с плагинами</div>
                             </div>
                             <div class="programs__item">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -343,14 +336,14 @@
                                     <path d="M29.4141 0H17.6367C17.3132 0 17.0508 0.262324 17.0508 0.585938C17.0508 0.909551 17.3132 1.17188 17.6367 1.17188H28.8281V19.1016H1.17188V1.17188H12.3633C12.6868 1.17188 12.9492 0.909551 12.9492 0.585938C12.9492 0.262324 12.6868 0 12.3633 0H0.585938C0.262383 0 0 0.262324 0 0.585938V23.2031C0 23.5267 0.262383 23.7891 0.585938 23.7891H11.9494L10.9987 28.8281H9.14062C8.81707 28.8281 8.55469 29.0904 8.55469 29.4141C8.55469 29.7377 8.81707 30 9.14062 30H20.8594C21.1829 30 21.4453 29.7377 21.4453 29.4141C21.4453 29.0904 21.1829 28.8281 20.8594 28.8281H19.0013L18.0506 23.7891H29.4141C29.7376 23.7891 30 23.5267 30 23.2031V0.585938C30 0.262324 29.7376 0 29.4141 0ZM12.1912 28.8281L13.1419 23.7891H16.858L17.8088 28.8281H12.1912ZM28.8281 22.6172C28.2088 22.6172 1.23738 22.6172 1.17188 22.6172V20.2734H28.8281V22.6172Z" fill="#FF6D00"/>
                                 </svg>
                                 <div class="programs__title">Курсовая работа</div>
-                                <div class="programs__text">В конце курса у вас будет свое портфолио и курсовая работа</div>
+                                <div class="programs__text h_orange">В конце курса у вас будет свое портфолио и курсовая работа</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="teacher">
+        <section class="teacher" id="prepod">
             <div class="wrapper-white">
                 <div class="container">
                     <div class="teacher__container">
@@ -369,7 +362,7 @@
                                                 <li class="teacher__stack-item">Иконки (ссылки) на редакторы кода</li>
                                             </ul>
                                             <div class="teacher__btn">
-                                                <a href="#" class="knowledge__btn btn">Оставить заявку</a>
+                                                <a href="javascript:;" class="knowledge__btn btn js-popup">Оставить заявку</a>
                                             </div>
                                         </div>
                                         <div class="teacher__img">
@@ -389,7 +382,7 @@
                                                 <li class="teacher__stack-item">Иконки (ссылки) на редакторы кода</li>
                                             </ul>
                                             <div class="teacher__btn">
-                                                <a href="#" class="knowledge__btn btn">Оставить заявку</a>
+                                                <a href="javascript:;" class="knowledge__btn btn js-popup">Оставить заявку</a>
                                             </div>
                                         </div>
                                         <div class="teacher__img">
@@ -409,7 +402,7 @@
                                                 <li class="teacher__stack-item">Иконки (ссылки) на редакторы кода</li>
                                             </ul>
                                             <div class="teacher__btn">
-                                                <a href="#" class="knowledge__btn btn">Оставить заявку</a>
+                                                <a href="javascript:;" class="knowledge__btn btn js-popup">Оставить заявку</a>
                                             </div>
                                         </div>
                                         <div class="teacher__img">
@@ -423,7 +416,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="port">
             <div class="wrapper-dark">
                 <div class="container">
                     <div class="portfolio__container content">
@@ -434,14 +427,14 @@
                                     <div class="portfolio__slider">
                                         <div class="portfolio__monitor">
                                             <div class="portfolio__monitor-img">
-                                                <img class="monitor js-monitor" src="images/monitor.png" alt="Портфолио Desktop">
-                                                <div class="portfolio__site"><img src="images/site.jpg" alt=""></div>
+                                                <img class="monitor" src="images/monitor.png" alt="Портфолио Desktop">
+                                                <div class="portfolio__site js-monitor"><img src="images/site.jpg" alt=""></div>
                                             </div>
                                         </div>
                                         <div class="portfolio__phone">
                                             <div class="portfolio__phone-img">
                                                 <img alt="Портфолио Phone" class="phone" src="images/phone.png">
-                                                <div class="portfolio__site phone"><img src="images/mobile.jpg" alt=""></div>
+                                                <div class="portfolio__site phone js-phone remove"><img src="images/mobile.jpg" alt=""></div>
                                             </div>
                                         </div>
                                     </div>
@@ -465,9 +458,9 @@
                                 <form action="" class="form">
                                     <div class="form__elements">
                                         <span>Ваше имя</span>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" required>
                                         <span>Телефон</span>
-                                        <input type="text" class="form__input">
+                                        <input type="tel" class="form__input" placeholder="+7 (777) 777-7777" required>
                                         <span>Группа</span>
                                         <div class="form__radio">
                                             <input class="radiobutton" type="radio" value="morning" id="morning" name="time" checked="">
@@ -476,7 +469,7 @@
                                             <label for="night" class="white night">Вечерняя</label>
                                             <div class="bgorange"></div>
                                         </div>
-                                        <input type="text" class="submit btn" value="Отправить">
+                                        <input type="submit" class="submit btn" value="Отправить">
                                     </div>
                                 </form>
                             </div>
@@ -488,7 +481,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="wrapper-dark">
                 <div class="container">
                     <div class="contacts__container content">
@@ -507,7 +500,7 @@
                     </div>
                 </div>
                 <div class="contacts__map">
-                    <img src="images/map.jpg" alt="">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abf8722430f5b2988e54272d84b9d140e2f516f15ef5c36d59ff2203b195ec8f4&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                 </div>
             </div>
         </section>
@@ -516,16 +509,16 @@
         <div class="container">
             <div class="footer__container top">
                 <div class="footer__logo">
-                    <a href="" class="header__logo-link"><img src="images/footlog.png" alt="Astana Education"></a>
+                    <a href="#main" class="header__logo-link"><img src="images/footlog.png" alt="Astana Education"></a>
                 </div>
                 <nav class="footer nav__menu">
                     <ul class="footer menu">
-                        <li class="footer menu__item"><a href="" class="footer menu__link">О нас</a></li>
-                        <li class="footer menu__item"><a href="" class="footer menu__link">База знаний</a></li>
-                        <li class="footer menu__item"><a href="" class="footer menu__link">Программа курса</a></li>
-                        <li class="footer menu__item"><a href="" class="footer menu__link">Преподаватель</a></li>
-                        <li class="footer menu__item"><a href="" class="footer menu__link">Портфолио</a></li>
-                        <li class="footer menu__item"><a href="" class="footer menu__link">Контакты</a></li>
+                        <li class="footer menu__item"><a href="" class="footer menu__link h_orange">О нас</a></li>
+                        <li class="footer menu__item"><a href="" class="footer menu__link h_orange">База знаний</a></li>
+                        <li class="footer menu__item"><a href="" class="footer menu__link h_orange">Программа курса</a></li>
+                        <li class="footer menu__item"><a href="" class="footer menu__link h_orange">Преподаватель</a></li>
+                        <li class="footer menu__item"><a href="" class="footer menu__link h_orange">Портфолио</a></li>
+                        <li class="footer menu__item"><a href="" class="footer menu__link h_orange">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="footer__item">
@@ -561,13 +554,37 @@
             <div class="container">
                 <div class="footer__items">
                     <div class="copyright">AstanaCreativeEducation2021. Все права защищены</div>
-                    <div class="developers">Разработка сайта <a href="#" class="developers__link">AstanaCreative</a></div>
+                    <div class="developers">Разработка сайта <a href="#" class="developers__link h_orange">AstanaCreative</a></div>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="popup" hidden>
+        <div class="popup__container">
+            <div class="form__item">
+                <form action="" class="form">
+                    <div class="form__elements">
+                        <span>Ваше имя</span>
+                        <input type="text" class="form__input" required>
+                        <span>Телефон</span>
+                        <input type="tel" class="form__input" placeholder="+7 (777) 777-7777" required>
+                        <span>Группа</span>
+                        <div class="form__radio">
+                            <input class="radiobutton" type="radio" value="morning-popup" id="morning-popup" name="time-popup" checked="">
+                            <label for="morning-popup" class="white morning popup-morning">Дневная</label>
+                            <input class="radiobutton" type="radio" value="night-popup" id="night-popup" name="time-popup">
+                            <label for="night-popup" class="white night popup-night">Вечерняя</label>
+                            <div class="bgorange popup-bg"></div>
+                        </div>
+                        <input type="submit" class="submit btn" value="Отправить">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="scripts/jquery.3.6.0.min.js"></script>
     <script src="scripts/slick.min.js"></script>
+    <script src="scripts/jquery.maskedinput.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
