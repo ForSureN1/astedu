@@ -2,6 +2,8 @@ $('#slider1').slick({
     autoplay: true,
     infinite: true,
     dots: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
@@ -17,6 +19,8 @@ $('#slider1').slick({
             breakpoint: 550,
             settings: {
                 dots: false,
+                arrows: false,
+                vertical: false,
             }
         }
     ]
@@ -107,12 +111,15 @@ window.addEventListener('load', () => {
     function showPopup() {
         let popup = document.querySelector('.popup')
         let popup_container = document.querySelector('.popup__container')
+        let body = document.querySelector('body')
         popup.hidden = false
         setTimeout(() => { popup.classList.add('active') }, 100)
+        body.style.overflow = "hidden"
         popup.addEventListener('click', (e) => {
             if (e.target == popup_container) {
                 popup.classList.remove('active')
-                setTimeout(() => { popup.hidden = true }, 1000)
+                setTimeout(() => { popup.hidden = true }, 300)
+                body.style.overflow = "unset"
             }
         })
     }
