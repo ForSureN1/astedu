@@ -315,6 +315,25 @@ h2.about__title {}
     flex-wrap: wrap;
 }
 
+.knowledge__tool a span {
+    position: relative;
+}
+
+.knowledge__tool a span::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #FF6D00;
+    left: 0;
+    bottom: 0;
+    transition: .7s ease;
+}
+
+.knowledge__tool a:hover span::before {
+    width: 100%;
+}
+
 .knowledge__tool a {
     display: flex;
     margin-right: 30px;
