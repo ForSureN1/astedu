@@ -1,5 +1,5 @@
 $('#slider1').slick({
-    autoplay: false,
+    autoplay: true,
     infinite: true,
     dots: true,
     speed: 1000,
